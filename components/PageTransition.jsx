@@ -10,12 +10,15 @@ export default function PageTransition({ children }) {
 		<AnimatePresence>
 			<div key={pathName}>
 				<motion.div
-					initial={{ opacity: 1 }}
-					animate={{
+					key={pathName}
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					exit={{
 						opacity: 0,
-						transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
+						transition: { delay: 0, duration: 0.4, ease: "easeInOut" },
 					}}
-					className="fixed top-0 w-screen h-screen pointer-events-none bg-primary">
+					transition={{ duration: 0.4, ease: "easeInOut" }}
+					className="w-full h-full">
 					{children}
 				</motion.div>
 			</div>
