@@ -64,7 +64,7 @@ export default function Work() {
 			<div className="container pt-8 mx-auto ">
 				<div className="flex flex-col xl:flex-row xl:gap-[30px]">
 					<div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-						<div className="flex flex-col gap-[30px] h-[50%]">
+						<div className="flex flex-col gap-[30px] h-[50%] mb-5 xl:mb-0">
 							<div className="font-extrabold leading-none text-transparent text-8xl text-outline">
 								{project.num}
 							</div>

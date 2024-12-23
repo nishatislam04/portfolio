@@ -11,10 +11,10 @@ export default function Home() {
 				<div className="flex flex-col items-center justify-between xl:flex-row xl:pt-2 xl:pb-8">
 					<div className="text-center xl:text-left xl:order-none">
 						<span>Software Developer</span>
-						<h1 className="h1">
+						<h1 className="mb-5 leading-[3rem] xl:leading-none h1">
 							Hello I&apos;am <br /> <span className="text-accent">Luke Coleman</span>
 						</h1>
-						<p className="max-w-[500px] mb-9 text-white/80">
+						<p className="max-w-[500px] mb-9 text-white/80 leading-8">
 							I excel at crafting elegant digital experience and I am proficient in various
 							programming language and technologies.
 						</p>

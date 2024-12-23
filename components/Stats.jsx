@@ -25,7 +25,7 @@ export default function Stats() {
 	return (
 		<section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
 			<div className="container mx-auto">
-				<div className="flex flex-wrap gap-6 max-w-[80vw] xl:max-w-none">
+				<div className="flex flex-wrap gap-12 xl:gap-6 max-w-[90vw] xl:max-w-none">
 					{stats.map((stat, index) => (
 						<div
 							key={index}
