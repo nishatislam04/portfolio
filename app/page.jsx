@@ -7,22 +7,19 @@ import { FiDownload } from "react-icons/fi";
 export default function Home() {
 	return (
 		<section className="h-full">
-			<div className="container h-full mx-auto">
-				<div className="flex flex-col items-center justify-between xl:flex-row xl:pt-8 xl:pb-24">
+			<div className="container h-full pt-6 mx-auto">
+				<div className="flex flex-col items-center justify-between xl:flex-row xl:pt-2 xl:pb-8">
 					<div className="text-center xl:text-left xl:order-none">
 						<span>Software Developer</span>
 						<h1 className="h1">
 							Hello I&apos;am <br /> <span className="text-accent">Luke Coleman</span>
 						</h1>
 						<p className="max-w-[500px] mb-9 text-white/80">
-							I excel at crafting elegant digital experience and I am proficient in
-							various programming language and technologies.
+							I excel at crafting elegant digital experience and I am proficient in various
+							programming language and technologies.
 						</p>
 						<div className="flex flex-col items-center gap-8 xl:flex-row">
-							<Button
-								variant="outline"
-								size="lg"
-								className="flex items-center gap-2 uppercase">
+							<Button variant="outline" size="lg" className="flex items-center gap-2 uppercase">
 								<span>Download CV</span>
 								<FiDownload className="text-xl" />
 							</Button>
@@ -35,7 +32,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="order-1 mb-8 xl:order-none xl:mb-0">
+					<div className="order-1 mb-8 scale-90 xl:order-none xl:mb-0">
 						<Photo />
 					</div>
 				</div>

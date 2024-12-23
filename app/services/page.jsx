@@ -37,19 +37,17 @@ const services = [
 export default function Services() {
 	return (
 		<section className="min=h-[80vh] flex flex-col justify-center py-12 xl:py-0">
-			<section className="container mx-auto">
+			<section className="container pt-12 mx-auto ">
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{
 						opacity: 1,
-						transition: { delay: 2.4, duration: 8.4, ease: "easeInOut" },
+						transition: { delay: 1, duration: 2.4, ease: "easeInOut" },
 					}}
 					className="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
 					{services.map((service, index) => {
 						return (
-							<div
-								key={index}
-								className="flex flex-col justify-center flex-1 gap-6 group">
+							<div key={index} className="flex flex-col justify-center flex-1 gap-6 group">
 								<div className="flex items-center justify-between w-full">
 									<div className="text-5xl font-extrabold text-transparent transition-all duration-500 text-outline group-hover:text-outline-hover">
 										{service.num}

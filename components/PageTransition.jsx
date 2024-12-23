@@ -12,12 +12,10 @@ export default function PageTransition({ children }) {
 				<motion.div
 					key={pathName}
 					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{
-						opacity: 0,
-						transition: { delay: 0, duration: 0.4, ease: "easeInOut" },
+					animate={{
+						opacity: 1,
+						transition: { delay: 0.8, duration: 2, ease: "easeInOut" },
 					}}
-					transition={{ duration: 0.4, ease: "easeInOut" }}
 					className="w-full h-full">
 					{children}
 				</motion.div>
