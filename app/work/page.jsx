@@ -19,7 +19,7 @@ const projects = [
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi augue, luctus vitae ex in, facilisis cursus tellus.",
 		stack: [{ name: "HTML 5" }, { name: "Css 3" }, { name: "Javascript" }],
-		image: "/asset/work/thumb1.png",
+		image: "/assets/work/thumb1.png",
 		live: "",
 		github: "",
 	},
@@ -30,7 +30,7 @@ const projects = [
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi augue, luctus vitae ex in.",
 		stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-		image: "/asset/work/thumb2.png",
+		image: "/assets/work/thumb2.png",
 		live: "",
 		github: "",
 	},
@@ -40,7 +40,7 @@ const projects = [
 		title: "Project 3",
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus.",
 		stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-		image: "/asset/work/thumb3.png",
+		image: "/assets/work/thumb3.png",
 		live: "",
 		github: "",
 	},
@@ -54,7 +54,7 @@ export default function Work() {
 		setProject(projects[currentIndex]);
 	}
 	return (
-		<motion.div
+		<motion.section
 			intial={{ opacity: 0 }}
 			animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
 			className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
@@ -117,13 +117,7 @@ export default function Work() {
 									<div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
 										<div className="absolute top-0 bottom-0 z-10 w-full h-full bg-black/10"></div>
 										<div className="relative w-full h-full">
-											<Image
-												src={project.image}
-												width={100}
-												height={100}
-												className="object-cover"
-												alt=""
-											/>
+											<Image src={project.image} fill className="object-cover" alt="" />
 										</div>
 									</div>
 								</SwiperSlide>
@@ -136,6 +130,6 @@ export default function Work() {
 					</div>
 				</div>
 			</div>
-		</motion.div>
+		</motion.section>
 	);
 }
