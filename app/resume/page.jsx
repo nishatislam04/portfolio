@@ -1,16 +1,16 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
+import { FaJs, FaReact, FaFigma, FaNodeJs, FaLaravel, FaPhp, FaDocker, FaSass, FaGitAlt } from "react-icons/fa";
+import { SiMysql, SiTypescript, SiPrisma, SiVitess } from "react-icons/si";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const about = {
 	title: "About me",
-	description:
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi augue, luctus vitae ex in, facilisis cursus tellus.",
+	description: "A passionate Full Stack Web Developer skilled in Laravel, Nextjs and MySQL. I build dynamic and scalable web apps. I have one year of job experience.",
 	info: [
 		{
 			fieldName: "Name",
-			fieldValue: "Nishat Islam",
+			fieldValue: "Minhajul Islam",
 		},
 		{
 			fieldName: "Phone",
@@ -18,11 +18,11 @@ const about = {
 		},
 		{
 			fieldName: "Experience",
-			fieldValue: "12+ Years",
+			fieldValue: "1+ Years",
 		},
 		{
-			fieldName: "Skype",
-			fieldValue: "nio004",
+			fieldName: "Whatsapp",
+			fieldValue: "(+880) 16411-02404",
 		},
 		{
 			fieldName: "Nationality",
@@ -38,7 +38,7 @@ const about = {
 		},
 		{
 			fieldName: "Language",
-			fieldValue: "English",
+			fieldValue: "English, Bangla",
 		},
 	],
 };
@@ -46,37 +46,12 @@ const about = {
 const experience = {
 	icon: "/assets/resume/badge.svg",
 	title: "My Experience",
-	description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi augue.",
+	description: "I have One year working experience on Softbd, Where i get to collaborate with many senior developers to build Fullstack web Applications.",
 	items: [
 		{
-			company: "Tech Solution Inc.",
+			company: "SoftBD LTD.",
 			position: "Full Stack Developer",
-			duration: "2022 - present",
-		},
-		{
-			company: "Web Design Studio",
-			position: "Front-End Developer Intern",
-			duration: "Summer 2021",
-		},
-		{
-			company: "E-commerce Startup",
-			position: "Freelance Web Developer",
-			duration: "2020 - 2021",
-		},
-		{
-			company: "Tech Academy",
-			position: "Teaching Assistant",
-			duration: "2019 - 2020",
-		},
-		{
-			company: "Digital Agency",
-			position: "UI/UX Designer",
-			duration: "2018 - 2019",
-		},
-		{
-			company: "Software Development Firm",
-			position: "Junior Developer",
-			duration: "2017 - 2018",
+			duration: "2023 - present",
 		},
 	],
 };
@@ -84,77 +59,76 @@ const experience = {
 const education = {
 	icon: "/assets/resume/cap.svg",
 	title: "My Education",
-	description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi augue.",
+	description: "I have completed my Diploma in CST (Computer Science Technology) in Feni Computer Institute with GPA 3.89 out of 4.0",
 	items: [
 		{
-			institution: "Online Course Platform",
-			degree: "Full Stack Web Development Bootcamp",
+			institution: "Feni Computer Institute",
+			degree: "Diploma in CST",
+			duration: "2024",
+		},
+		{
+			institution: "Mirkashem High School",
+			degree: "SSC",
 			duration: "2023",
-		},
-		{
-			institution: "Codecademy",
-			degree: "Front-end Track",
-			duration: "2022",
-		},
-		{
-			institution: "Online Course",
-			degree: "Programming Course",
-			duration: "2020-2021",
-		},
-		{
-			institution: "Tech Institute",
-			degree: "Certified Web Developer",
-			duration: "2019",
-		},
-		{
-			institution: "Design School",
-			degree: "Diploma in Graphic Design",
-			duration: "2016 - 2018",
-		},
-		{
-			institution: "Community in College",
-			degree: "Associate Degree in Computer Science",
-			duration: "2014 - 2016",
 		},
 	],
 };
 
 const skills = {
 	title: "My Skills",
-	description:
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi augue, luctus.",
+	description: "I have Years of experiences over Next.js, React, Javascript, Laravel, PHP, MYSQL, Docker, Typescript, SASS, Tailwindcss, Prisam, Git, Vite.",
 	skillList: [
 		{
-			icon: <FaHtml5 />,
-			name: "html 5",
-		},
-		{
-			icon: <FaCss3 />,
-			name: "css 3",
-		},
-		{
-			icon: <FaJs />,
-			name: "javascript",
+			icon: <SiNextdotjs />,
+			name: "Next.JS",
 		},
 		{
 			icon: <FaReact />,
-			name: "react.js",
+			name: "React.JS",
 		},
 		{
-			icon: <SiNextdotjs />,
-			name: "next.js",
+			icon: <FaJs />,
+			name: "Javascript",
+		},
+		{
+			icon: <FaLaravel />,
+			name: "Laravel",
+		},
+		{
+			icon: <FaPhp />,
+			name: "PHP",
+		},
+		{
+			icon: <SiMysql />,
+			name: "MYSQL",
+		},
+		{
+			icon: <FaDocker />,
+			name: "Docker",
+		},
+		{
+			icon: <SiTypescript />,
+			name: "Typescript",
 		},
 		{
 			icon: <SiTailwindcss />,
 			name: "tailwind.css",
 		},
 		{
-			icon: <FaNodeJs />,
-			name: "node.js",
+			icon: <FaSass />,
+			name: "SASS",
 		},
 		{
-			icon: <FaFigma />,
-			name: "figma",
+			icon: <SiPrisma />,
+			name: "Prisma",
+		},
+		{
+			icon: <FaGitAlt />,
+			name: "Git",
+		},
+		{
+			icon: <SiVitess />,
+			name: "Vite",
 		},
 	],
 };
@@ -168,10 +142,7 @@ import { motion } from "framer-motion";
 
 export default function Resume() {
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1, transition: { delay: 1, duration: 2.4, ease: "easeIn" } }}
-			className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
+		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 1, duration: 2.4, ease: "easeIn" } }} className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
 			<div className="container pt-8 mx-auto ">
 				<Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
 					<TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:m-0 gap-6">
@@ -185,20 +156,14 @@ export default function Resume() {
 						<TabsContent value="experience" className="w-full">
 							<div className="flex flex-col gap-[30px] text-center xl:text-left">
 								<h3 className="text-4xl font-bold">{experience.title}</h3>
-								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-									{experience.description}
-								</p>
+								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 leading-9">{experience.description}</p>
 								<ScrollArea className="h-[500px] xl:h-[400px]">
 									<ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
 										{experience.items.map((item, index) => {
 											return (
-												<li
-													key={index}
-													className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+												<li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
 													<span className="text-accent">{item.duration}</span>
-													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-														{item.position}
-													</h3>
+													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
 													<div className="flex items-center gap-3">
 														<span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
 														<p className="text-white/60 ">{item.company}</p>
@@ -214,20 +179,14 @@ export default function Resume() {
 						<TabsContent value="education" className="w-full">
 							<div className="flex flex-col gap-[30px] text-center xl:text-left">
 								<h3 className="text-4xl font-bold">{education.title}</h3>
-								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-									{education.description}
-								</p>
-								<ScrollArea className="h-[500px] xl:h-[400px]">
+								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 leading-9">{education.description}</p>
+								<ScrollArea className="h-[450px] xl:h-[400px]">
 									<ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
 										{education.items.map((item, index) => {
 											return (
-												<li
-													key={index}
-													className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+												<li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
 													<span className="text-accent">{item.duration}</span>
-													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-														{item.degree}
-													</h3>
+													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
 													<div className="flex items-center gap-3">
 														<span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
 														<p className="text-white/60 ">{item.institution}</p>
@@ -244,45 +203,39 @@ export default function Resume() {
 							<div className="flex flex-col gap-[30px]">
 								<div className="flex flex-col gap-[30px] text-center xl:text-left">
 									<h3 className="text-4xl font-bold">{skills.title}</h3>
-									<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-										{skills.description}
-									</p>
+									<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0  leading-9">{skills.description}</p>
 								</div>
-								<ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
-									{skills.skillList.map((skill, index) => {
-										return (
-											<li key={index} className="">
-												<TooltipProvider delayDuration={100}>
-													<Tooltip>
-														<TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-															<div className="text-6xl transition-all duration-300 group-hover:text-accent">
-																{skill.icon}
-															</div>
-														</TooltipTrigger>
-														<TooltipContent>
-															<p className="capitalize">{skill.name}</p>
-														</TooltipContent>
-													</Tooltip>
-												</TooltipProvider>
-											</li>
-										);
-									})}
-								</ul>
+								<ScrollArea className="h-[500px] xl:h-[400px]">
+									<ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
+										{skills.skillList.map((skill, index) => {
+											return (
+												<li key={index} className="">
+													<TooltipProvider delayDuration={100}>
+														<Tooltip>
+															<TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+																<div className="text-6xl transition-all duration-300 group-hover:text-accent">{skill.icon}</div>
+															</TooltipTrigger>
+															<TooltipContent>
+																<p className="capitalize">{skill.name}</p>
+															</TooltipContent>
+														</Tooltip>
+													</TooltipProvider>
+												</li>
+											);
+										})}
+									</ul>
+								</ScrollArea>
 							</div>
 						</TabsContent>
 
 						<TabsContent value="about" className="w-full text-center xl:text-left">
 							<div className="flex flex-col gap-[30px] ">
 								<h3 className="text-4xl font-bold">{about.title}</h3>
-								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 leading-7">
-									{about.description}
-								</p>
-								<ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-3 max-w-[620px] mx-auto xl:mx-0">
+								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 leading-9">{about.description}</p>
+								<ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-3 max-w-[620px] mx-auto xl:mx-0 mt-12 xl:mt-2">
 									{about.info.map((item, index) => {
 										return (
-											<li
-												key={index}
-												className="flex items-center justify-center gap-4 xl:justify-start">
+											<li key={index} className="flex items-center justify-center gap-4 xl:justify-start">
 												<span className="text-white/60">{item.fieldName}</span>
 												<span className="text-xl">{item.fieldValue}</span>
 											</li>

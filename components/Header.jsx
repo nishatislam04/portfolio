@@ -9,7 +9,7 @@ export default function Header() {
 			<div className="container flex items-center justify-between mx-auto">
 				<Link href="/">
 					<h1 className="text-4xl font-semibold">
-						Luke <span className="text-accent">.</span>
+						Nishat <span className="text-accent">.</span>
 					</h1>
 				</Link>
 				<div className="items-center hidden gap-8 xl:flex">

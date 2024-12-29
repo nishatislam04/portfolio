@@ -1,12 +1,13 @@
+import { githubLink, linkedinLink, messengerLink, whatsappLink } from "@/datasource/nishat";
 import Link from "next/link";
 
-import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
 
 const socials = [
-	{ icon: <FaGithub />, path: "" },
-	{ icon: <FaLinkedinIn />, path: "" },
-	{ icon: <FaYoutube />, path: "" },
-	{ icon: <FaTwitter />, path: "" },
+	{ icon: <FaGithub />, path: githubLink },
+	{ icon: <FaLinkedinIn />, path: linkedinLink },
+	{ icon: <FaWhatsapp />, path: whatsappLink },
+	{ icon: <FaFacebookMessenger />, path: messengerLink },
 ];
 
 export default function Social({ containerStyles, iconsStyles }) {
