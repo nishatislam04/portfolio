@@ -16,11 +16,14 @@ export async function sendEmail(formData) {
 			user: process.env.GMAIL_USER, // Your Gmail address
 			pass: process.env.GMAIL_PASS, // Your Gmail password or App Password
 		},
+		debug: true, // Add this
+		logger: true, // Add this
 	});
 
 	// Define email options
 	const mailOptions = {
 		from: process.env.GMAIL_USER,
+		replyTo: email, // User's email
 		to: "nishatislam3108@gmail.com", // Replace with your Gmail address
 		subject: `New message from ${firstname} ${lastname}`,
 		text: `
@@ -44,6 +47,8 @@ export async function sendEmail(formData) {
 	// Send the email
 	try {
 		await transporter.sendMail(mailOptions);
+		console.log("GMAIL_USER:", process.env.GMAIL_USER);
+		console.log("GMAIL_PASS:", process.env.GMAIL_PASS ? "*****" : "MISSING");
 		return { success: true };
 	} catch (error) {
 		console.error("Error sending email:", error);
